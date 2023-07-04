@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- css file link  -->
+       <link rel="stylesheet" href="style.css">
+       <script src="https://kit.fontawesome.com/082b549448.js" crossorigin="anonymous"></script>
+        <title>Alarm clock</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <!-- alarm clock section -->
+        <main>
+      <h1>Alarm Clock</h1>
+      <div id="liveclock">
+        <span id="hour" class="clock">04:</span>
+        <span id="minute"  class="clock">00:</span>
+        <span id="sec"  class="clock">00</span>
+        <span id="amPm"  class="clock">&nbsp;&nbsp;PM</span>
+      </div>
+
+      <div id="setAlarm"> 
+        <form>
+        <input type="number" max="12" min="1" id="setHour" placeholder="HH" required>
+        <input type="number" max="60" min="0" id="setMinute" placeholder="Min" required>
+        <input type="number" max="60" min="0" id="setSec" placeholder="Sec" required >
+        <select name="daynight" id="daynight">
+          <option value=""selected disabled >Zone</option>
+          <option value="AM">AM</option>
+          <option value="PM">PM</option>
+        </select>
+       
+        </form>
+      </div>
+
+      <button type="button" id="set">Set Alarm</button>
+      <button type="button" id="stop">Stop</button>
+
+      <ul id="list">
+
+      </ul>
+        </main>
+
+
+<script src="script.js"></script>
+    </body>
+</html>

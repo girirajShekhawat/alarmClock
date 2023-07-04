@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/23/12/53/clock-1274699_1280.jpg");
+ height: 100%;
+ width: 100%;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+
+}
+
+main{
+   
+    margin-top:50px;
+    margin-left: 150px;
+    position: relative;
+}
+
+h1{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 60px;
+    
+}
+
+.clock{
+    color: aliceblue;
+    font-size: 50px ;
+    font-weight: 600;
+    margin-left: 0px;
+  position: relative;
+   top:40px;
+    left:30px;
+}
+/* set alarm div */
+
+#setAlarm{
+    position:relative;
+    top:90px;
+   margin-left: -10px;
+   
+}
+
+#setHour{
+    box-sizing: border-box;
+    height:40px;
+    width:auto;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    box-shadow: none;
+    border: 0px;
+    padding: 5px;
+    
+}
+
+#setMinute{
+    box-sizing: border-box;
+    height:40px;
+    width:auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    box-shadow: none;
+    border: 0px;
+    padding: 5px;
+    
+}
+
+input:focus{
+    outline:none;
+}
+select:focus{
+    outline:none;
+}
+#setSec{
+    box-sizing: border-box;
+    height:40px;
+    width:auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    box-shadow: none;
+    border: 0px;
+    padding: 5px;
+}
+
+#daynight {
+    box-sizing: border-box;
+    height:40px;
+    width:auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+font-weight: 900;
+}
+/* buttons */
+#set{
+    box-sizing: border-box;
+    position: relative;
+    top:130px;
+   font-size: larger;
+    color: aliceblue;
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:   #282119;
+    font-weight: 600;
+}
+#stop{
+    box-sizing: border-box;
+    position: relative;
+    top:130px;
+    color: aliceblue;
+    font-size: larger;
+    margin-left: 100px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:#282119;
+    font-weight: 600;
+}
+
+#list{
+    position: relative;
+    top: 170px;
+    
+    font-size:35px;
+    color:aliceblue;
+}
+.delete{
+    margin-left: 50px;
+    background-color:  #282119;
+
+    height: 40px;
+    width: 50px;
+    color:aliceblue;
+    border-radius: 10px;
+    font-weight: 600;
+}
+@media screen and (max-width:600px){
+    main{
+        margin-left: 20px;
+    }
+}
