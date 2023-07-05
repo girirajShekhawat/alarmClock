@@ -152,19 +152,35 @@ audio.pause();
 //geting time in a defined form
 
 function returnTimestring(hour,min,sec,zone){
-
-    if(hour<10){
+if(hour[0]==="0"&&hour<10){
+    //nochange
+hour=hour;
+if(hour==="0"){
+    hour="0"+hour;
+}
+} 
+   if(hour[0]!=="0" && hour<10){
         hour="0"+hour;
     }
-    if(min<10){
+    if(min[0]==="0"&&  min<10){
+      min=min;
+      if(min==="0"){
         min="0"+min;
-    }if(sec<10){
+    }
+    }
+    if(min[0]!=="0"&& min<10){
+        min="0"+min;
+    }if(sec[0]==="0"&& sec<10){
+        sec=sec;
+        if(sec==="0"){
+            sec="0"+sec;
+        }
+    }
+    if(sec[0]!=="0" && sec<10){
         sec="0"+sec;
     }
     return `${hour}:${min}:${sec} ${zone}`;
-    
 }
-
 liveClock();
 
 //event deligation
