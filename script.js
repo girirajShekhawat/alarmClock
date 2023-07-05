@@ -88,7 +88,7 @@ function renderlist(){
 
 function setAlarm(){
 
-if(setHour.value>12||setHour.value<1||setMinute.value>60||setMinute.value<0||setSec.value>60||setSec.value<0||setMinute.value==="00"||setSec.value==="00"){
+if(setHour.value>12||setHour.value<1||setMinute.value>60||setMinute.value<0||setSec.value>60||setSec.value<0){
     console.log(alert("wrong input entered"));
     document.forms[0].reset();
 }
